@@ -4,18 +4,38 @@
 
 $default-font: 1.313rem;
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family-sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   section {
     position: relative;
   }
 }
 
-// .navbar-collapse .midias-sociais {
-//   display: none;
-// }
+.navbar-collapse {
+
+  .navbar-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    width: 100%;
+
+    a.nav-item {
+      padding: 0 !important;
+    }
+  }
+
+  .midias-sociais {
+    display: none;
+  }
+}
 
 .acessibilidade {
   position: fixed;
@@ -28,6 +48,10 @@ body {
   z-index: 99;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
 
+  @media (max-width: 1400px) {
+    left: 1%;
+  }
+
   .fontsize-up, .fontsize-down {
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 1.3rem;
@@ -36,6 +60,7 @@ body {
     font-weight: 700;
     color: #36b497;
     line-height: 1;
+    user-select: none;
   }
 
   > div {
@@ -65,14 +90,13 @@ body {
   }
 
   a.btn {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     color: #ffffff;
     font-size: $default-font;
     font-weight: 500;
     background-color: $primary;
     border-radius: 10rem;
-    padding: 0.5rem 1.8rem 0.4rem;
+    padding: 0.5rem 2rem 0.4rem 1.2rem;
 
     svg {
       margin-right: .6rem;
@@ -105,6 +129,7 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      padding: 0rem 3.5rem;
 
       h1 {
         font-size: 3.5rem;
@@ -137,6 +162,7 @@ body {
   .texto {
     color: #fff;
     font-size: $default-font;
+    padding: 3rem 0rem;
 
     h1 {
       font-size: 3.5rem;
@@ -236,6 +262,11 @@ body {
       top: 100%;
       transform: translateY(-80%);
 
+      @media(max-width: 1400px) {
+        width: 75%;
+        left: 35%;
+      }
+
       h4 {
         font-size: inherit;
         font-weight: 500;
@@ -286,6 +317,7 @@ body {
   .cards {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 
     &.cards-mobile {
       display: none;
@@ -296,6 +328,11 @@ body {
     position: relative;
     flex: 1;
     max-width: 358px;
+    margin-right: 1.4rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &__wrapper {
       position: relative;
@@ -419,8 +456,12 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 
+    &--mobile {
+      display: none;
+    }
+
     .card-parceiros {
-      min-height: 111px;
+      height: 110px;
       flex: 1 0 20%;
       display: flex;
       align-items: center;
@@ -483,6 +524,10 @@ footer {
       > img {
         margin-right: 0.8rem;
       }
+
+      > p {
+        margin: 0;
+      }
     }
   }
 
@@ -496,6 +541,10 @@ footer {
       margin-right: auto;
       justify-content: space-between;
       flex: 1;
+
+      @media (max-width:1400px) {
+        width: 90%;
+      }
 
       ul {
         list-style: none;

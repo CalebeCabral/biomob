@@ -32,9 +32,9 @@
           </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav">
             <a class="nav-item nav-link" href="#">Quem Somos <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">O Aplicativo</a>
+            <a class="nav-item nav-link" href="#aplicativo">O Aplicativo</a>
             <a class="nav-item nav-link" href="#">Eventos</a>
             <a class="nav-item nav-link" href="#">Campanhas</a>
             <a class="nav-item nav-link" href="#">Contato</a>
@@ -42,11 +42,11 @@
           </div>
           <div class="midias-sociais">
             <div class="icones">
-              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_facebook.svg" alt=""></a>
-              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_instagram.svg" alt=""></a>
-              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_linkedin.svg" alt=""></a>
-              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_youtube.svg" alt=""></a>
-              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_twitter.svg" alt=""></a>
+              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_facebook.svg" alt=""></a>
+              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_instagram.svg" alt=""></a>
+              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_linkedin.svg" alt=""></a>
+              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_youtube.svg" alt=""></a>
+              <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_twitter.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -59,6 +59,6 @@
     <div class="fontsize-up">Aa +</div>
     <div class="fontsize-down">Aa -</div>
     <div class="handtalk">
-      <img src="<?= get_template_directory_uri() ?>/assets/images/icon_handtalk.svg" alt="">
+      <img src="<?= get_template_directory_uri() ?>/assets/icons/icon_handtalk.svg" alt="">
     </div>
   </div>

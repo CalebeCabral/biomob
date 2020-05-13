@@ -7,7 +7,7 @@ $(document).ready(function () {
     arrows: false
   });
 
-  $(".parceiros__brands").slick({
+  $(".parceiros__brands--mobile").slick({
     infinite: false,
     dots: true,
     slidesToShow: 2,
@@ -23,5 +23,13 @@ $(document).ready(function () {
         $(this).css("display", "flex");
       }
     }, 200);
-  })
+  });
+
+  $(".fontsize-up").on("click", function () {
+    $("p").css({ "font-size": "+=2" })
+  });
+
+  $(".fontsize-down").on("click", function () {
+    $("p:not(.no-js)").css({ "font-size": "-=2" })
+  });
 });

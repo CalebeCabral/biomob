@@ -57,11 +57,11 @@
           <div class="col-12 col-lg-6 justify-content-center align-items-center">
             <div class="box">
               <div class="box__vida">
-                <h2>Vida</h2>
+                <h1>Vida</h1>
                 <p>Do Latin, bio</p>
               </div>
               <div class="box__mobilidade">
-                <h2>Mobilidade</h2>
+                <h1>Mobilidade</h1>
                 <p>Do Latin, bio</p>
               </div>
               <div class="box__biomob">
@@ -79,7 +79,7 @@
       </div>
     </section>
 
-    <section class="aplicativo">
+    <section class="aplicativo" id="aplicativo">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-5 d-flex justify-content-center flex-column texto">
@@ -87,7 +87,7 @@
             <p class="pb-4">Não há nada melhor do que frequentar um espaço com total autonomia. Sabemos que, para isso acontecer, há várias adaptações que tem que ser feitas e equipamentos que tem de ser colocados, para um melhor aproveitamento do deficiente físico/auditivo/visual etc.</p>
             <p><strong class="text-primary">Em nosso aplicativo, é possível buscar lugares próximos que cumpram com todos os requisitos necessários de acessibilidade.</strong> Nele você encontra: Notas, comentários, fotos (com áudio-descrição), endereço e muito mais.</p>
           </div>
-          <div class="col-12 col-lg-6 offset-lg-1 mt-4 mt-lg-0 justify-content-center align-items-center">
+          <div class="col-12 col-lg-6 offset-lg-1 mt-4 mt-lg-0 d-flex justify-content-center align-items-center">
             <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/images/mockup_aplicativo.png" alt="">
           </div>
         </div>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="card-eventos__info">
                   <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
+                  <p class="no-js">São Paulo, Maio de 2020</p>
                   <a href="#">Saiba Mais</a>
                 </div>
               </div>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="card-eventos__info">
                   <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
+                  <p class="no-js">São Paulo, Maio de 2020</p>
                   <a href="#">Saiba Mais</a>
                 </div>
               </div>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="card-eventos__info">
                   <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
+                  <p class="no-js">São Paulo, Maio de 2020</p>
                   <a href="#">Saiba Mais</a>
                 </div>
               </div>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="card-eventos__info">
                   <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
+                  <p class="no-js">São Paulo, Maio de 2020</p>
                   <a href="#">Saiba Mais</a>
                 </div>
               </div>
@@ -193,7 +193,7 @@
             <p class="pb-3">Nós da BioMob, alêm de divulgar eventos de outros organizadores, <span>temos orgulho de produzir nossas próprias campanhas também.</span></p>
             <p>Ao lado você confere as últimas, e pode clicar em cada uma delas pra saber mais.</p>
           </div>
-          <div class="col-12 col-lg-7">
+          <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
 
             <div class="cards">
               <!-- CAMPANHAS LOOP DESKTOP -->
@@ -274,31 +274,61 @@
               <p>Ao lado, uma lista de todos os parceiros que dão força ao projeto</p>
             </div>
 
+            <!-- DESKTOP -->
             <div class="parceiros__brands">
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/vivario.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/t2m.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/serratec.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/reacao.png" alt="">
               </div>
 
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/handtalk.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/instituto_nissan.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/digicon.png" alt="">
               </div>
               <div class="card-parceiros">
-                <img src="" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/cces.png" alt="">
+              </div>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="parceiros__brands parceiros__brands--mobile">
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/vivario.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/t2m.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/serratec.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/reacao.png" alt="">
+              </div>
+
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/handtalk.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/instituto_nissan.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/digicon.png" alt="">
+              </div>
+              <div class="card-parceiros">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/brands/cces.png" alt="">
               </div>
             </div>
           </div>

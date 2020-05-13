@@ -5,11 +5,11 @@
           <img src="<?= get_template_directory_uri() ?>/assets/images/logo_biomob_3.png" alt="">
           <p>Solução Digitais para pessoas <br>com deficiência. Acessibilidade <br>e inclusão é a nossa missão.</p>
           <div class="icones">
-            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_facebook.svg" alt=""></a>
-            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_instagram.svg" alt=""></a>
-            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_linkedin.svg" alt=""></a>
-            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_youtube.svg" alt=""></a>
-            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/images/icon_twitter.svg" alt=""></a>
+            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_facebook.svg" alt=""></a>
+            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_instagram.svg" alt=""></a>
+            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_linkedin.svg" alt=""></a>
+            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_youtube.svg" alt=""></a>
+            <a href=""><img src="<?= get_template_directory_uri() ?>/assets/icons/icon_twitter.svg" alt=""></a>
           </div>
         </div>
 
@@ -17,21 +17,21 @@
           <h4>Contato</h4>
           <div class="contato__info">
             <div class="contato__endereco">
-              <img src="<?= get_template_directory_uri() ?>/assets/images/icon_pin.svg" alt="">
-              Rua Afrânio de Melo Franco, 333 <br>Petrópolis - RJ
+              <img src="<?= get_template_directory_uri() ?>/assets/icons/icon_pin.svg" alt="">
+              <p>Rua Afrânio de Melo Franco, 333 <br>Petrópolis - RJ</p>
             </div>
             <div class="contato__tel">
-              <img src="<?= get_template_directory_uri() ?>/assets/images/icon_phone.svg" alt="">
-              (21) 99999-9999
+              <img src="<?= get_template_directory_uri() ?>/assets/icons/icon_phone.svg" alt="">
+              <p>(21) 99999-9999</p>
             </div>
             <div class="contato__email">
-              <img src="<?= get_template_directory_uri() ?>/assets/images/icon_email.svg" alt="">
-              contato@biomob.com.br
+              <img src="<?= get_template_directory_uri() ?>/assets/icons/icon_email.svg" alt="">
+              <p>contato@biomob.com.br</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-3 d-none d-lg-block menu">
+        <div class="col-12 col-lg-3 d-none d-lg-flex menu">
           <h4>Menu</h4>
 
           <div class="menu__itens">
