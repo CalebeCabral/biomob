@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
   <main>
     <section class="projeto">
       <svg width="90" height="90" class="d-block d-lg-none" style="position: absolute; top: 5%; transform: translateX(-70%);">
@@ -115,22 +114,16 @@
           <h1 class="text-primary d-block d-lg-none mb-4">Eventos</h1>
 
      <div class="cards">
-
-
-
-
      <?php
-
-$query_eventos = new WP_Query(
+      $query_eventos = new WP_Query(
     array( 'category__in' => array( 30 ),
-     'order' => 'DESC' ,
-     "posts_per_page" => "2"
-    )
+                      'order' => 'DESC' ,
+                      "posts_per_page" => "2"
+                      )
 );
-
-// The Loop
-if ($query_eventos->have_posts()) :
-    while ($query_eventos->have_posts()) :         $query_eventos->the_post(); ?>
+      // The Loop
+      if ($query_eventos->have_posts()) :
+          while ($query_eventos->have_posts()) :         $query_eventos->the_post(); ?>
         <!-- EVENTOS LOOP DESKTOP -->
         <div class="card-eventos">
           <div class="card-eventos__wrapper">
@@ -138,22 +131,19 @@ if ($query_eventos->have_posts()) :
               <img src="<?= get_the_post_thumbnail_url() ;?>" alt="">
             </div>
             <div class="card-eventos__info">
-              <h4>Nome do Evento</h4>
-              <p><?= get_the_title() ;?></p>
+              <h4><?= get_the_title() ;?></h4>
+              <p><?=  get_post_meta($post->ID, 'infomacaoAdicionais', true)  ;?></p>
               <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
             </div>
           </div>
         </div>
          <!-- / EVENTOS LOOP DESKTOP --> 
-   <?php endwhile ;
-else :  ?>
-    // no posts found
-<?php endif ;  ?>
-<?php wp_reset_postdata();?>
-
-     
+          <?php endwhile ;
+            else :  ?>
+            // no posts found
+        <?php endif ;  ?>
+        <?php wp_reset_postdata();?>
           </div>
-
           <div class="cards cards-mobile">
           <?php
           if ($query_eventos->have_posts()) :
@@ -205,14 +195,12 @@ else :  ?>
             <div class="cards">
             <?php $query_campanha = new WP_Query(
                     array( 'category__in' => array( 30 ),
-     'order' => 'DESC' ,
-     "posts_per_page" => "2"
-    )
+                        'order' => 'DESC' ,
+                        "posts_per_page" => "2"
+                        )
                 );
-if ($query_campanha->have_posts()) :
-  while ($query_campanha->have_posts()) :         $query_campanha->the_post(); ?>
-
-
+            if ($query_campanha->have_posts()) :
+             while ($query_campanha->have_posts()) : $query_campanha->the_post(); ?>
               <!-- CAMPANHAS LOOP DESKTOP -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
@@ -224,16 +212,16 @@ if ($query_campanha->have_posts()) :
               </div>
               <!-- /CAMPANHAS LOOP DESKTOP -->
               <?php endwhile ;
-else :  ?>
-    // no posts found
-<?php endif ;  ?>
-<?php wp_reset_postdata();?>
+                else :  ?>
+             // no posts found
+              <?php endif ;  ?>
+            <?php wp_reset_postdata();?>
             </div>
 
             <div class="cards cards-mobile">
             <?php
-if ($query_campanha->have_posts()) :
-  while ($query_campanha->have_posts()) :         $query_campanha->the_post(); ?>
+              if ($query_campanha->have_posts()) :
+                while ($query_campanha->have_posts()) : $query_campanha->the_post(); ?>
               <!-- CAMPANHAS LOOP MOBILE -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
@@ -243,14 +231,12 @@ if ($query_campanha->have_posts()) :
                   <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
                 </div>
               </div>
-
-  
               <!-- /CAMPANHAS LOOP MOBILE -->
               <?php endwhile ;
-else :  ?>
-    // no posts found
-<?php endif ;  ?>
-<?php wp_reset_postdata();?>
+                else :  ?>
+                // no posts found
+            <?php endif ;  ?>
+            <?php wp_reset_postdata();?>
             </div>
 
           </div>

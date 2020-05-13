@@ -7864,6 +7864,7 @@ body {
       overflow: hidden;
       background-color: #fff; }
       .eventos .card-eventos__image img {
+        width: 444px !important;
         flex: 1; }
     .eventos .card-eventos__info {
       background-color: #36B497;
@@ -7951,6 +7952,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: center; }
+      .campanhas .card-campanha__image img{
+        width: 450px !important;
+      }
 
 .contato-parceiros {
   background-color: rgba(54, 180, 151, 0.65);
