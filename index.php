@@ -115,6 +115,7 @@
           <h1 class="text-primary d-block d-lg-none mb-4">Eventos</h1>
 
           <div class="cards">
+            <!-- EVENTOS LOOP DESKTOP -->
             <div class="card-eventos">
               <div class="card-eventos__wrapper">
                 <div class="card-eventos__image">
@@ -140,9 +141,11 @@
                 </div>
               </div>
             </div>
+            <!-- /EVENTOS LOOP DESKTOP -->
           </div>
 
           <div class="cards cards-mobile">
+            <!-- EVENTOS LOOP MOBILE -->
             <div class="card-eventos">
               <div class="card-eventos__wrapper">
                 <div class="card-eventos__image">
@@ -168,6 +171,7 @@
                 </div>
               </div>
             </div>
+            <!-- /EVENTOS LOOP MOBILE -->
           </div>
 
           </div>
@@ -191,8 +195,8 @@
           </div>
           <div class="col-12 col-lg-7">
 
-            <!-- DESKTOP -->
             <div class="cards">
+              <!-- CAMPANHAS LOOP DESKTOP -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
                   <div class="card-campanha__image">
@@ -210,10 +214,11 @@
                   <a href="">Saiba Mais</a>
                 </div>
               </div>
+              <!-- /CAMPANHAS LOOP DESKTOP -->
             </div>
 
-            <!-- MOBILE -->
             <div class="cards cards-mobile">
+              <!-- CAMPANHAS LOOP MOBILE -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
                   <div class="card-campanha__image">
@@ -231,6 +236,7 @@
                   <a href="">Saiba Mais</a>
                 </div>
               </div>
+              <!-- /CAMPANHAS LOOP MOBILE -->
             </div>
 
           </div>
