@@ -1,0 +1,16 @@
+{
+  "name": "biomob",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass": "node-sass style/scss/main.scss style/css/main.css",
+    "sass:watch": "node-sass --watch style/scss/main.scss style/css/main.css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
