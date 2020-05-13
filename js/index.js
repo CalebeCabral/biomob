@@ -26,7 +26,7 @@ $(document).ready(function () {
   });
 
   $(".fontsize-up").on("click", function () {
-    $("p").css({ "font-size": "+=2" })
+    $("p:not(.no-js)").css({ "font-size": "+=2" })
   });
 
   $(".fontsize-down").on("click", function () {
