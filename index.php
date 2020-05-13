@@ -114,64 +114,71 @@
           <div class="col-12 col-lg-6 justify-content-center align-items-center">
           <h1 class="text-primary d-block d-lg-none mb-4">Eventos</h1>
 
-          <div class="cards">
-            <!-- EVENTOS LOOP DESKTOP -->
-            <div class="card-eventos">
-              <div class="card-eventos__wrapper">
-                <div class="card-eventos__image">
-                  <img src="" alt="">
-                </div>
-                <div class="card-eventos__info">
-                  <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
-                  <a href="#">Saiba Mais</a>
-                </div>
-              </div>
-            </div>
+     <div class="cards">
 
-            <div class="card-eventos">
-              <div class="card-eventos__wrapper">
-                <div class="card-eventos__image">
-                  <img src="" alt="">
-                </div>
-                <div class="card-eventos__info">
-                  <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
-                  <a href="#">Saiba Mais</a>
-                </div>
-              </div>
+
+
+
+     <?php
+
+$query_eventos = new WP_Query(
+    array( 'category__in' => array( 30 ),
+     'order' => 'DESC' ,
+     "posts_per_page" => "2"
+    )
+);
+
+// The Loop
+if ($query_eventos->have_posts()) :
+    while ($query_eventos->have_posts()) :         $query_eventos->the_post(); ?>
+        <!-- EVENTOS LOOP DESKTOP -->
+        <div class="card-eventos">
+          <div class="card-eventos__wrapper">
+            <div class="card-eventos__image">
+              <img src="<?= get_the_post_thumbnail_url() ;?>" alt="">
             </div>
-            <!-- /EVENTOS LOOP DESKTOP -->
+            <div class="card-eventos__info">
+              <h4>Nome do Evento</h4>
+              <p><?= get_the_title() ;?></p>
+              <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+         <!-- / EVENTOS LOOP DESKTOP --> 
+   <?php endwhile ;
+else :  ?>
+    // no posts found
+<?php endif ;  ?>
+<?php wp_reset_postdata();?>
+
+     
           </div>
 
           <div class="cards cards-mobile">
+          <?php
+          if ($query_eventos->have_posts()) :
+            while ($query_eventos->have_posts()) :         $query_eventos->the_post(); ?>
+         
             <!-- EVENTOS LOOP MOBILE -->
             <div class="card-eventos">
               <div class="card-eventos__wrapper">
                 <div class="card-eventos__image">
-                  <img src="" alt="">
+                 <img src="<?= get_the_post_thumbnail_url() ;?>" alt="">
                 </div>
                 <div class="card-eventos__info">
                   <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
-                  <a href="#">Saiba Mais</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-eventos">
-              <div class="card-eventos__wrapper">
-                <div class="card-eventos__image">
-                  <img src="" alt="">
-                </div>
-                <div class="card-eventos__info">
-                  <h4>Nome do Evento</h4>
-                  <p>São Paulo, Maio de 2020</p>
-                  <a href="#">Saiba Mais</a>
+                  <p><?= get_the_title() ;?></p>
+              <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
                 </div>
               </div>
             </div>
             <!-- /EVENTOS LOOP MOBILE -->
+
+            <?php endwhile ;
+                else :  ?>
+                    // no posts found
+                <?php endif ;  ?>
+                <?php wp_reset_postdata();?>
           </div>
 
           </div>
@@ -196,47 +203,54 @@
           <div class="col-12 col-lg-7">
 
             <div class="cards">
+            <?php $query_campanha = new WP_Query(
+                    array( 'category__in' => array( 30 ),
+     'order' => 'DESC' ,
+     "posts_per_page" => "2"
+    )
+                );
+if ($query_campanha->have_posts()) :
+  while ($query_campanha->have_posts()) :         $query_campanha->the_post(); ?>
+
+
               <!-- CAMPANHAS LOOP DESKTOP -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
                   <div class="card-campanha__image">
-                    <img src="" alt="">
+                  <img src="<?= get_the_post_thumbnail_url() ;?>" alt="">
                   </div>
-                  <a href="">Saiba Mais</a>
-                </div>
-              </div>
-
-              <div class="card-campanha">
-                <div class="card-campanha__wrapper">
-                  <div class="card-campanha__image">
-                    <img src="" alt="">
-                  </div>
-                  <a href="">Saiba Mais</a>
+                  <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
                 </div>
               </div>
               <!-- /CAMPANHAS LOOP DESKTOP -->
+              <?php endwhile ;
+else :  ?>
+    // no posts found
+<?php endif ;  ?>
+<?php wp_reset_postdata();?>
             </div>
 
             <div class="cards cards-mobile">
+            <?php
+if ($query_campanha->have_posts()) :
+  while ($query_campanha->have_posts()) :         $query_campanha->the_post(); ?>
               <!-- CAMPANHAS LOOP MOBILE -->
               <div class="card-campanha">
                 <div class="card-campanha__wrapper">
                   <div class="card-campanha__image">
-                    <img src="" alt="">
+                  <img src="<?= get_the_post_thumbnail_url() ;?>" alt="">
                   </div>
-                  <a href="">Saiba Mais</a>
+                  <a href="<?= the_permalink()  ;?>">Saiba Mais</a>
                 </div>
               </div>
 
-              <div class="card-campanha">
-                <div class="card-campanha__wrapper">
-                  <div class="card-campanha__image">
-                    <img src="" alt="">
-                  </div>
-                  <a href="">Saiba Mais</a>
-                </div>
-              </div>
+  
               <!-- /CAMPANHAS LOOP MOBILE -->
+              <?php endwhile ;
+else :  ?>
+    // no posts found
+<?php endif ;  ?>
+<?php wp_reset_postdata();?>
             </div>
 
           </div>
@@ -306,5 +320,4 @@
       </div>
     </section>
   </main>
-
-<?php get_footer(); ?>
+  <?php get_footer() ;?>
