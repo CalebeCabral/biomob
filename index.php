@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <main>
-    <section class="projeto">
+    <section class="projeto" id="projeto">
       <svg width="90" height="90" class="d-block d-lg-none" style="position: absolute; top: 5%; transform: translateX(-70%);">
         <circle cx="45" cy="45" r="40" style="fill: #D0EADE;" />
       </svg>
@@ -31,7 +31,7 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <svg width="190" height="190" class="d-block d-lg-none" style="position: absolute; transform: translate(-60%, 30%);">
         <circle cx="95" cy="95" r="90" style="stroke: rgba(92, 158, 135, 0.3); stroke-width: 1; fill: transparent;" />
         <circle cx="95" cy="95" r="72" style="stroke: rgba(92, 158, 135, 0.3); stroke-width: 15; fill: transparent;" />
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section class="eventos">
+    <section class="eventos" id="eventos">
       <svg width="445" height="445" class="d-none d-lg-block" style="position: absolute; top: 5%; left: 5%;">
         <circle cx="225" cy="225" r="220" style="fill: #D0EADE;" />
       </svg>
@@ -182,7 +182,7 @@
       </div>
     </section>
 
-    <section class="campanhas">
+    <section class="campanhas" id="campanhas">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-5 d-flex justify-content-center flex-column texto">
@@ -244,7 +244,7 @@
       </div>
     </section>
 
-    <section class="contato-parceiros">
+    <section class="contato-parceiros" id="contato-parceiros">
       <svg width="445" height="445" class="d-block d-lg-none" style="position: absolute; top: 0; left: 0; transform: translate(-70%, 50%);">
         <circle cx="225" cy="225" r="220" style="fill: #D0EADE; opacity: .35;" />
       </svg>

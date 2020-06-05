@@ -7728,8 +7728,11 @@ body {
 .navbar-collapse .navbar-nav {
   justify-content: space-between;
   align-items: center;
-  padding-left: 6rem;
+  padding-left: 12rem;
   width: 100%; }
+  @media (max-width: 1400px) {
+    .navbar-collapse .navbar-nav {
+      padding-left: 6rem; } }
   .navbar-collapse .navbar-nav a.nav-item {
     padding: 0 !important; }
 
@@ -7745,10 +7748,7 @@ body {
   padding: 1.7rem 1.2rem 1.5rem;
   text-align: center;
   z-index: 99;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
-  @media (max-width: 1400px) {
-    .acessibilidade {
-      left: 1%; } }
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3); }
   .acessibilidade .fontsize-up, .acessibilidade .fontsize-down {
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 1.3rem;
@@ -7760,6 +7760,13 @@ body {
     user-select: none; }
   .acessibilidade > div {
     cursor: pointer; }
+  @media (max-width: 1400px) {
+    .acessibilidade {
+      left: 1%; }
+      .acessibilidade .fontsize-up, .acessibilidade .fontsize-down {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem; } }
 
 .projeto {
   padding: 2rem 0rem 3rem; }

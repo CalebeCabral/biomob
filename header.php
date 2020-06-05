@@ -33,12 +33,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Quem Somos <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#sobre">Quem Somos <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#aplicativo">O Aplicativo</a>
-            <a class="nav-item nav-link" href="#">Eventos</a>
-            <a class="nav-item nav-link" href="#">Campanhas</a>
-            <a class="nav-item nav-link" href="#">Contato</a>
-            <a class="nav-item nav-link" href="#">Parceiros</a>
+            <a class="nav-item nav-link" href="#eventos">Eventos</a>
+            <a class="nav-item nav-link" href="#campanhas">Campanhas</a>
+            <a class="nav-item nav-link" href="#contato-parceiros">Contato</a>
+            <a class="nav-item nav-link" href="#contato-parceiros">Parceiros</a>
           </div>
           <div class="midias-sociais">
             <div class="icones">
